@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Information about GenesisVA Lead Operations, Ryan Roncal’s private business lead and Gmail metadata tracking integration.">
+  <title>GenesisVA Lead Operations</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="shell header-inner">
+      <a class="brand" href="index.html" aria-label="GenesisVA Lead Operations home"><span class="brand-mark" aria-hidden="true">G</span> GenesisVA</a>
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="index.html" aria-current="page">Overview</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a>
+      </nav>
+    </div>
+  </header>
+  <main id="main" class="shell">
+    <section class="hero" aria-labelledby="title">
+      <p class="eyebrow">Private operations · Public information</p>
+      <h1 id="title">GenesisVA<br>Lead Operations</h1>
+      <p class="intro">Ryan Roncal’s private tool for organizing business leads and tracking replies to manually linked email conversations.</p>
+      <div class="status-line" aria-label="Integration safeguards"><span>Owner access only</span><span>Gmail metadata only</span><span>Sending disabled</span></div>
+    </section>
+    <section class="overview" aria-labelledby="purpose">
+      <h2 id="purpose">What the tool does</h2>
+      <div>
+        <p>The integration connects a self-hosted n8n workflow to the owner’s Gmail account. It checks selected conversation metadata and updates outreach statuses in a private Base44 application and Google Sheet.</p>
+        <p>It helps the owner see whether a manually linked email has a reply and whether a follow-up needs review. Drafts remain inside the private lead queue; this Gmail connection cannot create drafts or send messages.</p>
+        <p>This information site is separate from the private GenesisVA website. It contains no lead records or access to the application.</p>
+      </div>
+    </section>
+    <section class="facts" aria-label="How Google access works">
+      <div class="fact">
+        <p class="fact-number">01 / ACCESS</p>
+        <h3>Headers and labels</h3>
+        <p>The Google permission is <code>gmail.metadata</code>. The workflow uses the mailbox profile, message identifiers, headers, labels, and timestamps.</p>
+      </div>
+      <div class="fact">
+        <p class="fact-number">02 / LIMITS</p>
+        <h3>No bodies or attachments</h3>
+        <p>The connection cannot read message bodies or attachments, modify mail, create Gmail drafts, or send email.</p>
+      </div>
+      <div class="fact">
+        <p class="fact-number">03 / CONTROL</p>
+        <h3>Disconnect anytime</h3>
+        <p>The owner can revoke access in Google Account settings. The <a href="privacy.html#control">privacy policy</a> explains stored data and deletion.</p>
+      </div>
+    </section>
+    <section class="contact-panel" aria-labelledby="contact">
+      <div><h2 id="contact">Questions about Google access?</h2><p>Contact Ryan Roncal, the operator of this integration.</p></div>
+      <a href="mailto:ryanjroncal@gmail.com">ryanjroncal@gmail.com</a>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="shell footer-inner"><p>GenesisVA Lead Operations · Operated by Ryan Roncal</p><nav class="footer-links" aria-label="Legal"><a href="privacy.html">Privacy policy</a><a href="terms.html">Terms</a></nav></div>
+  </footer>
+</body>
+</html>
